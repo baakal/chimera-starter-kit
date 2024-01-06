@@ -80,7 +80,9 @@
                         @forelse($records as $record)
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                    {{$record->name}}
+
+                                    <div class="font-medium py-2">{{$record->title}}</div>
+                                    <div class="text-gray-500 text-xs">{{$record->name}}</div>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">
                                     {{$record->questionnaire}}
